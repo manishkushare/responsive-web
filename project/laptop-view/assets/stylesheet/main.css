@@ -1,0 +1,458 @@
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* ============ custom style================= */
+*{
+    box-sizing: border-box;
+}
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* ---------header-------- */
+
+.image-logo {
+    width: 20%;
+    /* height: 50px; */
+    /* background-color: #131A22; */
+
+}
+.flexbox {
+    display: flex;
+    justify-content: space-between;
+
+    
+}
+/* .col2-header li {
+    display: inline-block;
+    margin-right: 20px; 
+    text-transform: uppercase;
+    color: #ffffff;
+
+} */
+.col2-header {
+    width: 50%;
+}
+.col1-header {
+    width: 50%;
+}
+
+.col2-header  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+li {
+    list-style: none;
+    text-transform: uppercase;
+}
+
+.col2-header a {
+    text-decoration: none;
+    color: #ffffff;
+}
+.header-background {
+    background-color: #131A22;
+}
+/* .col1-header {
+    padding: 20px 0;
+} */
+
+/* -------hero------------ */
+
+.hero,
+.about {
+    background-color: #366D65;
+    /* padding: 200px 0; */
+    background-image: linear-gradient(#26464E 10%, #438C74 );
+}
+.hero-text h1 {
+    color: #ffffff;
+    font-size: 50px;
+    text-transform: uppercase;
+    font-weight: bold;
+    word-spacing: 20px;
+    text-align: center;
+
+    line-height: 75px;
+}
+.hero-text h2 {
+    color: #ffffff;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 20px;
+}
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 200px 0;
+}
+
+
+/* ---------- portfolio------------- */
+
+.flex-portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 20px 0;
+
+}
+
+
+
+.portfolio-head {
+    
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    color: #2C3E50;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+/* -------------about------------- */
+
+.about-head {
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #DFF5E1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    
+}
+.flex-about {
+    display: flex;
+    justify-content: space-around;
+    
+
+}
+.container-about {
+    width: 60%;
+    margin: auto;
+    
+}
+.col1-about p,
+.col2-about p {
+    color: #D5EDDA;
+    font-size: 25px;
+    /* padding: 0 20px; */
+    line-height: 1.2;
+    
+}
+.anchor-about {
+    display: block;
+    text-align: center;
+}
+.btn-about {
+    padding: 10px 40px;
+    color: black;
+    background-color: #FFFFFF;
+    border: 2px solid black;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+/* ----------contact----------- */
+
+.contact h2 {
+    color: #2C3E50;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    margin: 50px 0;
+    text-transform: uppercase;
+}
+
+.name {
+    font-size: 20px;
+    color: #2C3E50;
+    border-bottom: 1px solid black;
+    padding: 20px 0;
+}
+.message {
+    padding-bottom: 150px;
+}
+.margin {
+    width: 60%;
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+}
+
+.btn-contact {
+    padding: 10px 40px;
+    color: #ffffff;
+    background-color: #326C5E;
+    font-size: 20px;
+    border: none;
+    margin: 50px 0;
+    border-radius: 10%;
+    font-weight: bold;
+}
+
+/* -----------maps---------- */
+
+.maps {
+    background-color: #BDC7D2;
+}
+.maps-custom     {
+    height: fit-content;
+    
+    display: flex;
+    justify-content: center;
+
+}
+
+/* ---------table----------- */
+
+.table h2 {
+    color: black;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 50px 0;
+}
+
+.content-table {
+    border-collapse: collapse;
+    margin: 25px auto;
+    font-size: 0.9em;
+    min-width: 100%;
+    text-align: left;
+}
+.content-table thead tr th {
+    background-color: #1E2639;
+    color: #205875;
+    text-align: left;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 20px 20px;
+    margin: 0 auto;
+}
+.content-table td,
+.content-table td {
+    padding: 20px 20px;
+
+}
+.content-table tr:nth-of-type(even) {
+    background-color: #2B3346;
+}
+.content-table tr:nth-of-type(odd) {
+    background-color: #323C50;
+}
+.sites-name {
+    color: #934E64;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+/* ----------footer--------- */
+
+.footer-background {
+    background-color: #2C3E50;
+    padding: 100px 0;
+}
+.footer-flex {
+    display: flex;
+    justify-content: space-evenly;
+}
+.col1-footer,
+.col2-footer,
+.col3-footer {
+    width: 33%;
+    
+    text-align: center;
+
+}
+.col1-footer h2,
+.col2-footer h2,
+.col3-footer h2 {
+    padding: 20px 0;
+    font-size: 25px;
+    font-weight: bold;
+    color: #ffffff;
+    text-transform: uppercase;
+    line-height: 1;
+}
+.col1-footer p,
+.col3-footer p {
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 1.5;
+} 
+
+.footer-nav-flex {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+    
+}
+
+.icon {
+    background-color: transparent;
+    color: #ffffff;
+    font-size: 30px;
+
+    
+}
+.footer-nav-flex a {
+    color: #FFFFFF;
+    text-decoration: none;
+    display: flex;
+    font-size: 30px;
+    padding: 25px 0;
+}
+cite {
+    color: #5AB999;
+}
+
+/* ---------footer- copyright--------- */
+
+.copyright-background {
+    background-color: #19242E;
+    padding: 25px 0;
+
+}
+.copy {
+    font-size: 15px;
+    color: #ffffff;
+    display: block;
+    text-align: center;
+}
+
+@media screen and (max-width:768px) {
+   /* --header--- */
+   
+    .flexbox {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .col1-header {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+        
+        
+    }
+    .col2-header {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+        align-content: center;
+        justify-content: center;
+
+    }
+    .col2-header li {
+        padding: 10px 0;
+    }
+    /* ---hero--- */
+
+   .hero h1 {
+       font-size: 25px;
+       line-height: 1;
+       word-spacing: 4px;
+    }
+    .hero h2 {
+        font-size: 20px;
+     }
+     .flex-about {
+         display: flex;
+         flex-direction: column;
+
+     } 
+     .col-about {
+         width: 100%;
+         padding: 20px 0;
+     }
+     .maps-custom {
+         width: 80%;
+         margin: 0 auto;
+     }
+     .footer-flex {
+         display: flex;
+         flex-direction: column;
+
+     }
+     .col-footer {
+         width: 100%;
+     }
+     /* ---table---- */
+
+     .content-table td,
+      .content-table td {
+         padding: 0;
+     }
+     .content-table thead tr th {
+         padding: 0;
+     }
+     .copy {
+         display: block;
+         text-align: center;
+     }
+}
+    
